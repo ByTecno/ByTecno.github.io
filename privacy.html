@@ -12,29 +12,31 @@
 </head>
 <body>
 <h1>Política de privacidad de TeknoBrawl Analytics</h1>
-<p>Última actualización: 19 de noviembre de 2026.</p>
+<p>Última actualización: 19 de noviembre de 2026 (calendario).</p>
 
-<p>TeknoBrawl Analytics es una herramienta de uso personal del creador del canal de YouTube <a href="https://www.youtube.com/channel/UCimOkmWDV8u4BKpyd57aleg">Tekno - Brawl Stars</a>. Sirve para consultar las estadísticas de ese canal. No es un servicio abierto al público y no la usa nadie más.</p>
+<p>TeknoBrawl Analytics es una herramienta de uso personal del creador del canal de YouTube <a href="https://www.youtube.com/channel/UCimOkmWDV8u4BKpyd57aleg">Tekno - Brawl Stars</a>. Sirve para consultar las estadísticas de ese canal y para planificar su calendario de producción. No es un servicio abierto al público y no la usa nadie más.</p>
 
 <h2>Qué datos usa</h2>
-<p>Con el permiso que da el propietario del canal mediante el inicio de sesión de Google, la herramienta accede <strong>solo en modo lectura</strong> a:</p>
+<p>Con el permiso que da el propietario del canal mediante el inicio de sesión de Google, la herramienta accede a:</p>
 <ul>
-  <li>La información pública y privada de los vídeos del propio canal (YouTube Data API).</li>
-  <li>Las estadísticas del propio canal, ingresos estimados incluidos (YouTube Analytics API y YouTube Reporting API).</li>
+  <li><strong>YouTube, solo en modo lectura:</strong> la información pública y privada de los vídeos del propio canal (YouTube Data API) y sus estadísticas, ingresos estimados incluidos (YouTube Analytics API y YouTube Reporting API). No puede publicar, modificar ni borrar nada en YouTube.</li>
+  <li><strong>Google Calendar, en modo lectura:</strong> la lista de calendarios del propietario y sus eventos (fecha, hora y título), solo para no asignar tareas del canal encima de sus planes personales. No modifica ni borra ningún calendario ni evento existente.</li>
+  <li><strong>Google Calendar, en modo escritura solo en su propio calendario:</strong> la herramienta crea un calendario llamado «TeknoBrawl» y únicamente crea, cambia y borra eventos en ese calendario (las tareas de producción del canal). Google no le permite escribir en ningún otro calendario.</li>
 </ul>
-<p>No accede a datos de otros usuarios ni de otros canales, y no puede publicar, modificar ni borrar nada.</p>
+<p>No accede a datos de otros usuarios ni de otros canales.</p>
 
 <h2>Dónde se guardan</h2>
-<p>Los datos se descargan y se guardan únicamente en el ordenador del propietario del canal. El token de acceso se guarda en ese mismo ordenador y no se comparte.</p>
+<p>Los datos se guardan en el ordenador del propietario y en un almacenamiento privado de su cuenta de Cloudflare (Workers KV), desde el que los sirve una web privada a la que solo puede entrar el propietario, tras iniciar sesión con su cuenta de Google. Las actualizaciones automáticas se ejecutan en GitHub Actions: el código es público, pero los datos nunca se guardan en el repositorio y los tokens de acceso están en los secretos cifrados de GitHub y de Cloudflare.</p>
+<p>De Google Calendar solo se guardan los eventos de los próximos meses que hacen falta para planificar, y se reemplazan en cada actualización.</p>
 
 <h2>Con quién se comparten</h2>
-<p>Con nadie. Los datos no se venden, no se ceden a terceros y no se usan para publicidad.</p>
+<p>Con nadie. Los datos no se venden, no se ceden a terceros, no se usan para publicidad ni para entrenar modelos de inteligencia artificial.</p>
 
 <h2>Cómo retirar el acceso</h2>
-<p>El propietario puede retirar el permiso en cualquier momento desde <a href="https://myaccount.google.com/permissions">la página de permisos de su cuenta de Google</a>. Para borrar los datos ya descargados basta con eliminar la carpeta local de la herramienta.</p>
+<p>El propietario puede retirar el permiso en cualquier momento desde <a href="https://myaccount.google.com/permissions">la página de permisos de su cuenta de Google</a>. Para borrar los datos ya guardados basta con eliminar la carpeta local de la herramienta y su almacenamiento de Cloudflare. El calendario «TeknoBrawl» se puede borrar desde Google Calendar.</p>
 
 <h2>Uso de los datos de las API de Google</h2>
-<p>El uso de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de las API de Google</a>, incluidos los requisitos de uso limitado. Al usar las API de YouTube también se aplican las <a href="https://www.youtube.com/t/terms">Condiciones del servicio de YouTube</a> y la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</p>
+<p>El uso de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de las API de Google</a>, incluidos los requisitos de uso limitado. Al usar las API de YouTube y de Google Calendar también se aplican las <a href="https://www.youtube.com/t/terms">Condiciones del servicio de YouTube</a> y la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</p>
 
 <h2>Contacto</h2>
 <p>Para cualquier duda, escribe a través del canal de YouTube <a href="https://www.youtube.com/channel/UCimOkmWDV8u4BKpyd57aleg">Tekno - Brawl Stars</a>.</p>
